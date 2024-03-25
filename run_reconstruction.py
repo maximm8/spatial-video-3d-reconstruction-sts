@@ -15,9 +15,6 @@ dataset_name    = 'starbucks_cup'
 data_folder     = f'{dataset_folder}/{dataset_name}/'
 output_folder   = f'{result_folder}/{dataset_name}/'
 
-# data_folder = 'data/2024-03-20 15-09-49_rect'
-# output_folder = 'results/2024-03-20 15-09-49_rect'
-
 
 shadow_th           = 100
 black_white_ind     = (0, 1)
