@@ -1,27 +1,24 @@
 # 3D reconstruction using Apple Spatial Video and spacetime stereo algorithm
 
-object 3D reconstruation using spatial video sequince captuted by iphone 15 pro using 
-
-# Description
-Spacetime stereo is 3D reconstruction  technique that enables precise estimation of the 3D geometry of an object using two or more cameras and an uncalibrated projector. This approach utilizes temporal variation of scene illumination to establish accurate matching between different cameras. As a result, spacetime stereo is capable of generating highly precise 3D reconstructions of objects and scenes.
+object 3D reconstruction using spacetime stereo approach and Apple spatial video sequence captured by iphone 15 pro
 
 # Requirements
  - opencv
  - open3d
  - spacetimestereo
 
-<!-- # starbuck cup dataset
-captured images  
-estimated disparity map  
-point cloud   -->
+# Starbucks cup dataset
+ <video src="docs/starbucks_cup_laser.mp4" controls="controls" style="width: 800px;"> </video>
+
+ <video src="docs/starbucks_cup_animation.mp4" controls="controls" style="width: 800px;"> </video>
+
+ <img src="docs/starbucks_cup_disparity.png" alt="disparity map" style="width:800px;"/>
 
 
 # Usage
 
-launch run_reconstruction.py 
-
 ```
-python main_show_model.py
+python run_reconstruction.py
 ```
 
 # References 
