@@ -11,16 +11,17 @@ dataset_folder  = f'data/'
 result_folder   = f'results/'
 
 dataset_name    = 'starbucks_cup'
+dataset_name    = 'starbucks_cup_projector'
 
 data_folder     = f'{dataset_folder}/{dataset_name}/'
 output_folder   = f'{result_folder}/{dataset_name}/'
 
 
-shadow_th           = 100
+shadow_th           = 25
 black_white_ind     = (0, 1)
 disp_range          = (30, 80)
 device              = 'cuda'# or 'cpu' 
-batches             = 8 # try 10 if out of memory
+batches             = 10 # try 12 if out of memory
 filter_size         = 3 # spatial smoothing window size
 
 ss  = sts.SpacetimeStereo()
@@ -45,7 +46,7 @@ disparity_map[:,disparity_map.shape[1]-(disp_range[1]-disp_range[0]):disparity_m
 
 pcd = ss.disparity_to_point_cloud(-disparity_map, texture_img, z_lim=[00, 600])
 
-# postprocessing point cloud using open3D
+# postprocessing point cloud 
 pcd.transform([[1, 0, 0, 0], [0, -1, 0, 0], [0, 0, -1, 0], [0, 0, 0, 1]])
 pcd, ind = pcd.remove_radius_outlier(nb_points=20, radius=1)
 
