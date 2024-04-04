@@ -8,12 +8,18 @@ object 3D reconstruction using spacetime stereo approach and Apple spatial video
  - spacetimestereo
 
 # Starbucks cup dataset
+### input 
 <img src="docs/starbucks_cup_laser.gif" alt="captured sequence" style="width:800px;"/>
  <!-- <video src="docs/starbucks_cup_laser.mp4" controls="controls" style="width: 800px;"> </video> -->
+ 
+ ### or
+<img src="docs/starbucks_cup_projector.gif" alt="captured sequence" style="width:800px;"/>
 
+### point cloud
 <img src="docs/starbucks_cup_pc_anim.gif" alt="point cloud" style="width:800px;"/>
  <!-- <video src="docs/starbucks_cup_animation.mp4" controls="controls" style="width: 800px;"> </video> -->
 
+### disparity map
  <img src="docs/starbucks_cup_disparity.png" alt="disparity map" style="width:800px;"/>
 
 
